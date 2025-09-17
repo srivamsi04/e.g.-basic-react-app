@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Class from './assets/classs.jsx'
-import hello,{hi} from './assets/ArrowFunction.jsx'
+import hello,{hi,Bye} from './assets/ArrowFunction.jsx'
 const element=(
   <table>
     <tr>
@@ -28,6 +28,7 @@ createRoot(document.getElementById('root')).render(
   {element}
   <p>{hello()}</p>
   {hi()}
+  {Bye('2500')}
   </>
   
 )
