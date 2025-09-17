@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import Class from './assets/classs.jsx'
 const element=(
   <table>
     <tr>
@@ -19,6 +20,7 @@ const element=(
     </tr>
   </table>
 )
+
 createRoot(document.getElementById('root')).render(
-  element 
+  <Class></Class>
 )
