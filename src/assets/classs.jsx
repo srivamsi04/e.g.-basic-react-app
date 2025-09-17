@@ -5,14 +5,30 @@ function Class(){
         }
     
     present(){
-        return 'My car Name is '+this.brand
+        return 'My car Name is '+this.brand;
     }
 }
-    const Mycar=new Car("FORD");
+class MOdel extends Car{
+    constructor(name,mod){
+        super(name);
+        this.Model=mod
+    }
+    show(){
+        return <div>
+            <>
+            <p>
+                {this.present()}  'it is a '<b>{this.Model} </b> ' model ';
+            </p>
+            </>
+        </div>
+        
+    }
+}
+    const Mycar=new MOdel("FORD","Mustang");
     
     return(
         <div>
-            <p>{Mycar.present()}</p>
+            <p>{Mycar.show()}</p>
         </div>
     );
 }
