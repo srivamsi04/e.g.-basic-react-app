@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Class from './assets/classs.jsx'
+import hello,{hi} from './assets/ArrowFunction.jsx'
 const element=(
   <table>
     <tr>
@@ -25,6 +26,8 @@ createRoot(document.getElementById('root')).render(
   <>
   <Class></Class>
   {element}
+  <p>{hello()}</p>
+  {hi()}
   </>
   
 )
