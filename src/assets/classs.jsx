@@ -3,12 +3,16 @@ function Class(){
         constructor(name) {
             this.brand=name;
         }
+    
+    present(){
+        return 'My car Name is '+this.brand
     }
+}
     const Mycar=new Car("FORD");
     
     return(
         <div>
-            <p>{Mycar.brand}</p>
+            <p>{Mycar.present()}</p>
         </div>
     );
 }

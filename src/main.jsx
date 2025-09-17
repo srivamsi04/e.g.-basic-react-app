@@ -22,5 +22,9 @@ const element=(
 )
 
 createRoot(document.getElementById('root')).render(
+  <>
   <Class></Class>
+  {element}
+  </>
+  
 )
