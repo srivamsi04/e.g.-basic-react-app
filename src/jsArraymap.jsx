@@ -29,7 +29,7 @@ function ArrayMap(){
         function Mylist(){
             const [fruits, setFruits]=useState(['Apple','banana','cherry']);
             const removeFirst = () => {
-                setFruits(prev => prev.slice(1));
+                setFruits(prev => prev.slice(0,prev.length-1));
             };
             const addFruit=()=>{
                 setFruits(prev=>[...prev,"Mango"]);
