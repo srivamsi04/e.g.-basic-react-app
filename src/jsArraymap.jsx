@@ -31,6 +31,9 @@ function ArrayMap(){
             const removeFirst = () => {
                 setFruits(prev => prev.slice(1));
             };
+            const addFruit=()=>{
+                setFruits(prev=>[...prev,"Mango"]);
+            }
 
             return(
                 <div>
@@ -42,6 +45,7 @@ function ArrayMap(){
                     }
                 </ul>
                 <button onClick={removeFirst}>Remove First Fruit</button>
+                <button onClick={addFruit}>+</button>
                 </div>
             );
             
