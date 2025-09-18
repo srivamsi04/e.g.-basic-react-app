@@ -1,3 +1,4 @@
+import { useState } from "react";
 function ArrayMap(){
     const text=<div>
         <p>
@@ -26,16 +27,24 @@ function ArrayMap(){
             the output of the code is :        
             `;
         function Mylist(){
-            const fruitlist=['Apple','banana','cherry'];
+            const [fruits, setFruits]=useState(['Apple','banana','cherry']);
+            const removeFirst = () => {
+                setFruits(prev => prev.slice(1));
+            };
+
             return(
+                <div>
                 <ul style={{textAlign:"left"}}>
                     {
-                        fruitlist.map(fruit=>(
+                        fruits.map(fruit=>(
                             <li key={fruit}>{fruit}</li>
                         ))
                     }
                 </ul>
+                <button onClick={removeFirst}>Remove First Fruit</button>
+                </div>
             );
+            
         }
     return (
         <div style={{border:"1px solid black", padding:"20px", marginTop:"20px", gap:"5px"}}>
