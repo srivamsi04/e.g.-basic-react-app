@@ -7,6 +7,7 @@ import hello,{hi,Bye} from './assets/ArrowFunction.jsx'
 import Variables from './Variables.jsx'
 import ArrayMap from './jsArraymap.jsx'
 import Objects from './assets/Objects.jsx'
+import MapParameter from './assets/mapParameters.jsx'
 const element=(
   <table>
     <tr>
@@ -28,6 +29,7 @@ const date=new Date();
 const todate=date.getDate();
 
 createRoot(document.getElementById('root')).render(
+  <StrictMode>
   <>
   <Variables />
   <ArrayMap />
@@ -39,6 +41,8 @@ createRoot(document.getElementById('root')).render(
   <p>{date.toString()} <br />
   {(todate-10)}</p>
   <Objects />
+  <MapParameter />
   </>
+  </StrictMode>
   
 )
