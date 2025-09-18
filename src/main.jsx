@@ -21,6 +21,7 @@ const element=(
     </tr>
   </table>
 )
+const date=Date();
 
 createRoot(document.getElementById('root')).render(
   <>
@@ -29,6 +30,7 @@ createRoot(document.getElementById('root')).render(
   <p>{hello()}</p>
   {hi()}
   {Bye('2500')}
+  <p>{date}</p>
   </>
   
 )
