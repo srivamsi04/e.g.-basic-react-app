@@ -6,6 +6,7 @@ import Class from './assets/classs.jsx'
 import hello,{hi,Bye} from './assets/ArrowFunction.jsx'
 import Variables from './Variables.jsx'
 import ArrayMap from './jsArraymap.jsx'
+import Objects from './assets/Objects.jsx'
 const element=(
   <table>
     <tr>
@@ -37,6 +38,7 @@ createRoot(document.getElementById('root')).render(
   {Bye('2500')}
   <p>{date.toString()} <br />
   {(todate-10)}</p>
+  <Objects />
   </>
   
 )
