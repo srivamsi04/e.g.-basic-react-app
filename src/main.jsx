@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Class from './assets/classs.jsx'
 import hello,{hi,Bye} from './assets/ArrowFunction.jsx'
 import Variables from './Variables.jsx'
+import ArrayMap from './jsArraymap.jsx'
 const element=(
   <table>
     <tr>
@@ -28,6 +29,7 @@ const todate=date.getDate();
 createRoot(document.getElementById('root')).render(
   <>
   <Variables />
+  <ArrayMap />
   <Class></Class>
   {element}
   <p>{hello()}</p>

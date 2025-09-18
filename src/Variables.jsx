@@ -1,6 +1,10 @@
 function Variables(){
-    const variableVar = <>
-    <p>
+    const variableVar = <div style={{border:"1px solid red"}}>
+    <p> 
+        <h1>Variables</h1>
+        <h3>var</h3>
+        <br />
+
         Before ES6 there was only one way of defining your variables:
          with the var keyword. If you did not define them, they would 
          be assigned to the global object. Unless you were in strict mode, 
@@ -59,7 +63,7 @@ But you CAN: </b>
 Change the elements of constant array
 Change the properties of constant object
     </p>
-    </>
+    </ div>
     return(
         <>{variableVar}</>
     )
