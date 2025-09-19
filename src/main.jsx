@@ -3,11 +3,13 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Class from './assets/classs.jsx'
-import hello,{hi,Bye} from './assets/ArrowFunction.jsx'
+//import Hello,{Hi,Bye,AddAndRemove} from './assets/ArrowFunction.jsx'
+import AboutArrays from './assets/ArrowFunction.jsx'
 import Variables from './Variables.jsx'
 import ArrayMap from './jsArraymap.jsx'
 import Objects from './assets/Objects.jsx'
 import MapParameter from './assets/mapParameters.jsx'
+
 const element=(
   <table>
     <tr>
@@ -35,9 +37,8 @@ createRoot(document.getElementById('root')).render(
   <ArrayMap />
   <Class></Class>
   {element}
-  <p>{hello()}</p>
-  {hi()}
-  {Bye('2500')}
+
+  <AboutArrays />
   <p>{date.toString()} <br />
   {(todate-10)}</p>
   <Objects />

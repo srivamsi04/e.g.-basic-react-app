@@ -1,4 +1,4 @@
-import { useState } from "react";
+//import { useState } from "react";
 function MapParameter(){
     const about=<div>
         <h1>map() Parameters</h1>
