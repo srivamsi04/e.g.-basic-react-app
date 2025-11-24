@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import "./index.css"
 import App from './App.jsx'
 import Class from './assets/classs.jsx'
 //import Hello,{Hi,Bye,AddAndRemove} from './assets/ArrowFunction.jsx'
@@ -10,7 +11,6 @@ import DropDown from './dropDown.jsx'
 import ArrayMap from './jsArraymap.jsx'
 import Objects from './assets/Objects.jsx'
 import MapParameter from './assets/mapParameters.jsx'
-
 const element=(
   <table>
     <tr>
