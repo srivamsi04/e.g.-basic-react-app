@@ -6,6 +6,7 @@ import Class from './assets/classs.jsx'
 //import Hello,{Hi,Bye,AddAndRemove} from './assets/ArrowFunction.jsx'
 import AboutArrays from './assets/ArrowFunction.jsx'
 import Variables from './Variables.jsx'
+import DropDown from './dropDown.jsx'
 import ArrayMap from './jsArraymap.jsx'
 import Objects from './assets/Objects.jsx'
 import MapParameter from './assets/mapParameters.jsx'
@@ -33,6 +34,7 @@ const todate=date.getDate();
 createRoot(document.getElementById('root')).render(
   <StrictMode>
   <>
+  <DropDown />
   <Variables />
   <ArrayMap />
   <Class></Class>
